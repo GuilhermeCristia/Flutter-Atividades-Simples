@@ -51,7 +51,7 @@ class _MyAppState extends State<MyApp> with SingleTickerProviderStateMixin {
                   SizedBox(height: 20),
                   TextField(
                     decoration: InputDecoration(
-                      hintText: 'Nome',
+                      hintText: 'Email',
                       border: OutlineInputBorder(),
                     ),
                   ),
