@@ -1,4 +1,7 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 void main() => runApp(MyApp());
 
@@ -23,6 +26,7 @@ class _MyAppState extends State<MyApp> with SingleTickerProviderStateMixin {
       home: Scaffold(
         appBar: AppBar(
           title: Text('Aplicativo Do Cest'),
+          backgroundColor: Color.fromARGB(137, 51, 2, 141),
           bottom: TabBar(
             controller: _tabController,
             tabs: [
@@ -39,7 +43,6 @@ class _MyAppState extends State<MyApp> with SingleTickerProviderStateMixin {
               child: Text('OS QUEBRA CODIGOS'),
             ),
 
-            // Login tab
             Center(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -66,6 +69,7 @@ class _MyAppState extends State<MyApp> with SingleTickerProviderStateMixin {
                   SizedBox(height: 20),
                   MaterialButton(
                     child: Text('Login'),
+                    textColor: Color.fromARGB(255, 103, 1, 143),
                     onPressed: () {},
                   ),
                 ],
